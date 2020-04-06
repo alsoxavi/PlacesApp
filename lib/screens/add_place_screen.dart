@@ -14,9 +14,16 @@ class AddPlaceScreen extends StatefulWidget {
 class _AddPlaceScreenState extends State<AddPlaceScreen> {
   final _titleController = TextEditingController();
   File _pickedImage;
+  bool fieldEnable = false;
 
   void _selectImage(File pickedImage) {
     _pickedImage = pickedImage;
+
+    if (_pickedImage == null) return;
+
+    setState(() {
+      fieldEnable = true;
+    });
   }
 
   void _savePlace() {
@@ -46,6 +53,7 @@ class _AddPlaceScreenState extends State<AddPlaceScreen> {
                 child: Column(
                   children: <Widget>[
                     TextField(
+                      enabled: fieldEnable,
                       controller: _titleController,
                       decoration: InputDecoration(
                         labelText: 'Title',
