@@ -38,3 +38,4 @@ lib/generated_plugin_registrant.dart
 android/app/src/main/res/*
 ios/Runner/Assets.xcassets/*
 env.dart
+android/key.properties

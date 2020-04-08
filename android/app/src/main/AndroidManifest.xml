@@ -7,8 +7,8 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="places_app"
-        android:icon="@mipmap/ic_launcher">
+        android:label="Places App"
+        android:icon="@drawable/ic_launcher_foreground">
         <meta-data android:name="com.google.android.geo.API_KEY"
                android:value="AIzaSyCK8xD7ItfpOeiWq0YxbaS_zFsmIXqpVVI"/>
         <activity
